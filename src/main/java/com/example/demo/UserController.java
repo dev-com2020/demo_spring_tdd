@@ -12,10 +12,10 @@ public class UserController {
         this.userService = userService;
     }
 
-    @PostMapping("/{username}")
-    public void addUser(@PathVariable String username){
-        userService.addUser(username);
-    }
+//    @PostMapping("/{username}")
+//    public void addUser(@PathVariable String username){
+//        userService.addUser(username);
+//    }
     @GetMapping("/{username}")
     public boolean isUserRegistered(@PathVariable String username){
         return userService.isUserRegistered(username);
